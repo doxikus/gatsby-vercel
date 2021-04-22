@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
+import strapiconf from "../images/strapi-conf.jpeg"
 
 function Index() {
   const [date, setDate] = useState(null);
@@ -15,9 +16,10 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>#strapiconf - Strapi as a publishing platform for the largest local sports betting platform
+</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
+      <h1>Strapi as a publishing platform for the largest local sports betting platform</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -29,26 +31,21 @@ function Index() {
         </a>
         !
       </h2>
-      <p>
+      <p>This is recap of 
         <a
-          href="https://github.com/vercel/vercel/tree/main/examples/gatsby"
+          href="https://conf.strapi.io/stage/adopt"
           target="_blank"
           rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://www.gatsbyjs.org/">Gatsby</a> app with two
-        directories, <code>/src</code> for static content and <code>/api</code>{' '}
-        which contains a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js (TypeScript)</a> function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Node.js (TypeScript)
-        </a>
+        > my presentation</a>, thanks for image {' '}
+          <a href="https://twitter.com/strapijs">Strapi</a> and 
+         <a href="https://vercel.com/">Vercel</a> 
+        
         .
       </p>
       <br />
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      <img src={strapiconf} alt="strapi conf" />
+      
+      {/* <p>{date ? date : 'Loading date...'}</p> */}
     </main>
   );
 }
