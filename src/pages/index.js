@@ -37,8 +37,7 @@ function Index() {
           target="_blank"
           rel="noreferrer noopener"
         > my presentation</a>, thanks for image {' '}
-          <a href="https://twitter.com/strapijs">Strapi</a> and 
-         <a href="https://vercel.com/">Vercel</a> 
+          <a href="https://twitter.com/strapijs">Strapi</a>
         
         .
       </p>
